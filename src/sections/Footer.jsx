@@ -57,7 +57,7 @@ const Footer = () => {
             alt="copyright"
             width={20}
             height={20}
-            classname="rounded-full m-0"
+            className="rounded-full m-0"
           />
           <p>Copyright. All rights reserved.</p>
         </div>

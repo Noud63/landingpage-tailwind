@@ -1,31 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { headerLogo } from '../assets/images'
-import { hamburger} from '../assets/icons'
+import { hamburger, close} from '../assets/icons'
 import { navLinks } from '../constants'
+import SideBarMenu from './SideBarMenu'
+import HeaderMenu from './HeaderMenu'
 
 const Nav = () => {
-  return (
-    <header className="padding-x py-8 absolute z-10 w-full">
-        <nav className="flex justify-between items-center max-container">
-            <a href="/">
-                <img src={headerLogo} alt="Logo" width={130} height={29}/>
-            </a>
 
-            <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-                {navLinks.map( (item) => (
-                    <li key={item.label}>
-                        <a href={item.href}
-                        className="font-montserrat leading-normal text-lg text-slate-gray"
-                        >{item.label}</a>
-                    </li>
-                ))}
-            </ul>
-            <div className="hidden max-lg:block">
-                <img src={hamburger} alt="hamburger" width={25} height={25}/>
-            </div>
+    const[ show, setShow ] = useState(false)
+
+    const handleMenu = () => {
+        setShow(!show)
+    }
+
+  return (
+    <>
+      <header className="padding-x py-6 absolute w-full flex flex-row z-10">
+        <nav className="w-full max-container flex flex-row z-40">
+          <a href="/">
+            <img src={headerLogo} alt="Logo" width={130} height={29} />
+          </a>
+          <HeaderMenu navLinks={navLinks} />
         </nav>
-    </header>
-  )
+        <div className={"hidden max-lg:block"}>
+          {!show ? <img
+            src={hamburger}
+            alt="hamburger"
+            width={35}
+            height={35}
+            onClick={handleMenu}
+          /> : ""}
+        </div>
+      </header>
+      <SideBarMenu navLinks={navLinks} show={show} setShow={setShow} />
+    </>
+  );
 }
 
 export default Nav
