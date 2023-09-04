@@ -20,13 +20,13 @@ const SpecialOffer = () => {
           <span className="text-coral-red"> Special</span> Offer
         </h2>
 
-        <p className="mt-4 lg:max-w-lg info-text">
+        <p className="mt-4 lg:max-w-lg text-gray-200">
           Embark on a shopping journey that redefines your experience with
           unbeatable deals. From premier selections to incredible savings, we
           offer unparalleled value that sets us apart.
         </p>
 
-        <p className="mt-6 lg:max-w-lg info-text">
+        <p className="mt-6 lg:max-w-lg text-gray-400">
           Navigate a realm of possibilities designed to fulfill your unique
           desires, surpassing the loftiest expectations. Your journey with us is
           nothing short of exceptional.

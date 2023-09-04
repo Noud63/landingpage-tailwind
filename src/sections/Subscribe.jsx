@@ -12,8 +12,8 @@ const Subscribe = () => {
         <span className="text-coral-red"> Updates</span> & newsletter
       </h3>
 
-        <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
-            <input type="text" placeholder="subscribe@nike.com" className="input" />
+        <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-gray-400 rounded-full">
+            <input type="text" placeholder="subscribe@nike.com" className="input bg-slate-600" />
 
             <div className="flex mx-sm:justify-end items-center max-sm:w-full">
               <Button label="Sign Up" fullWidth />

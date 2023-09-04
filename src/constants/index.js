@@ -10,6 +10,7 @@ import {
   bigShoe1,
   bigShoe2,
   bigShoe3,
+  bigShoe4,
   customer1,
   customer2,
   shoe4,
@@ -19,6 +20,7 @@ import {
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
+  thumbnailShoe4,
 } from "../assets/images";
 
 export const navLinks = [
@@ -32,14 +34,26 @@ export const shoes = [
   {
     thumbnail: thumbnailShoe1,
     bigShoe: bigShoe1,
+    price: "320",
+    name: "Nike Air Max 720 ISPA Metallic Silver",
   },
   {
     thumbnail: thumbnailShoe2,
     bigShoe: bigShoe2,
+    price: "320",
+    name: "Nike Air Max 720 ISPA Metallic Silver",
   },
   {
     thumbnail: thumbnailShoe3,
     bigShoe: bigShoe3,
+    price: "320",
+    name: "Nike Air Max 720 ISPA Metallic Silver",
+  },
+  {
+    thumbnail: thumbnailShoe4,
+    bigShoe: bigShoe4,
+    price: "119.45",
+    name: "Nike ISPA Link Burley/Redstone/Desert Moss",
   },
 ];
 

@@ -30,10 +30,12 @@ export default {
       },
       backgroundImage: {
         hero: "url('assets/images/collection-background.png')",
-        card: "url('assets/images/thumbnail-background.svg')",
+        card: "url('assets/images/thumbnail-background.png')",
       },
       screens: {
         wide: "1440px",
+        xxxl: '1380px',
+        xxl: "1300px",
       },
     },
   },
