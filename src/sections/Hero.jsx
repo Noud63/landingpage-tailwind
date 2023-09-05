@@ -70,9 +70,9 @@ const Hero = () => {
             alt="shoeImage"
             width={610}
             height={500}
-            className="object-contain relative mb-8 mt-8"
+            className="object-contain relative mb-10 mt-10"
           />
-          <div className="w-full flex justify-end text-sm text-coral-red mr-8 max-xl:justify-center max-xl: pl-6">
+          <div className="w-full flex justify-end text-sm text-coral-red mr-8 max-xl:justify-center max-xl:pl-6 ">
             <div>
               Model: {nameAndPrice.name} <br /> Price: <span className="font-bold text-xl">${nameAndPrice.price}</span>
             </div>
