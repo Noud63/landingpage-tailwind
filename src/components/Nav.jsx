@@ -23,13 +23,17 @@ const Nav = () => {
           <HeaderMenu navLinks={navLinks} />
         </nav>
         <div className={"hidden max-lg:block"}>
-          {!show ? <img
-            src={hamburger}
-            alt="hamburger"
-            width={35}
-            height={35}
-            onClick={handleMenu}
-          /> : ""}
+          {!show ? (
+            <img
+              src={hamburger}
+              alt="hamburger"
+              width={35}
+              height={35}
+              onClick={handleMenu}
+            />
+          ) : (
+            ""
+          )}
         </div>
       </header>
       <SideBarMenu navLinks={navLinks} show={show} setShow={setShow} />

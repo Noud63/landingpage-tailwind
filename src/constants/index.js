@@ -34,20 +34,20 @@ export const shoes = [
   {
     thumbnail: thumbnailShoe1,
     bigShoe: bigShoe1,
-    price: "320",
+    price: "320,-",
     name: "Nike Air Max 720 ISPA Metallic Silver",
   },
   {
     thumbnail: thumbnailShoe2,
     bigShoe: bigShoe2,
-    price: "320",
-    name: "Nike Air Max 720 ISPA Metallic Silver",
+    price: "145,-",
+    name: "Nike Air Max 720 Waves Blue Void",
   },
   {
     thumbnail: thumbnailShoe3,
     bigShoe: bigShoe3,
-    price: "320",
-    name: "Nike Air Max 720 ISPA Metallic Silver",
+    price: "159.97",
+    name: "Nike ISPA Sense Flyknit",
   },
   {
     thumbnail: thumbnailShoe4,
@@ -64,6 +64,30 @@ export const statistics = [
 ];
 
 export const products = [
+  {
+    imgURL: shoe4,
+    name: "Nike Air Jordan-01",
+    price: "$200.20",
+    rating: 4.5,
+  },
+  {
+    imgURL: shoe5,
+    name: "Nike Air Jordan-10",
+    price: "$210.20",
+    rating: 3,
+  },
+  {
+    imgURL: shoe6,
+    name: "Nike Air Jordan-100",
+    price: "$220.20",
+    rating: 5,
+  },
+  {
+    imgURL: shoe7,
+    name: "New Balance, Huh?",
+    price: "$230.20",
+    rating: 3.5,
+  },
   {
     imgURL: shoe4,
     name: "Nike Air Jordan-01",

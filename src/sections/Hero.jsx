@@ -6,13 +6,9 @@ import { bigShoe1 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
+  
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   const [nameAndPrice, setNameAndPrice] = useState({name: "Nike Air Max 720 ISPA Metallic Silver", price:"320"});
-
-
-  const addName= (name) => {
-    setName(name)
-  }
 
   return (
     <section
@@ -43,7 +39,7 @@ const Hero = () => {
           </h1>
 
           <p className="font-montserrat text-gray-200 text-lg mt-6 mb-14 sm:max-w-sm">
-            Discover these Nike arrivals, quality, comfort, and craziness for a
+            Discover these Nike weirdos, quality, comfort, and craziness for a
             new identity.
           </p>
 
@@ -78,7 +74,7 @@ const Hero = () => {
           />
           <div className="w-full flex justify-end text-sm text-coral-red mr-8 max-xl:justify-center max-xl: pl-6">
             <div>
-              Model: {nameAndPrice.name} <br /> Price: <span className="font-bold text-xl">${nameAndPrice.price},-</span>
+              Model: {nameAndPrice.name} <br /> Price: <span className="font-bold text-xl">${nameAndPrice.price}</span>
             </div>
             
           </div>
