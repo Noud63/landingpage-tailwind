@@ -53,7 +53,7 @@ export const shoes = [
     thumbnail: thumbnailShoe4,
     bigShoe: bigShoe4,
     price: "119.45",
-    name: "Nike ISPA Link Burley/Redstone/Desert Moss",
+    name: "Nike ISPA Link Burley/Redstone/Desert",
   },
 ];
 

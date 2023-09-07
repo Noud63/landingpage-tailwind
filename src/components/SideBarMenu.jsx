@@ -1,17 +1,40 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { close } from "../assets/icons";
 
 const SideBarMenu = ({navLinks, show, setShow}) => {
+
+  const [size, setSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
   const closeMenu = () => {
     setShow(false)
   }
 
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(()=> {
+if (size.width > 1032) {
+  setShow(false);
+}
+  },[size])
+  
+
   return (
     <>
       {show ? (
         <div
-          className="absolute transition ease-in-out duration-1000 z-40 h-full top-0 right-0 w-[50%] bg-coral-red 
+          className="fixed z-[999] transition ease-in-out duration-1000 min-h-screen top-0 right-0 w-[50%] bg-coral-red 
              flex flex-col lg:hidden max-sm:w-[100%] shadow-2xl"
         >
           <ul className="w-full flex-1 flex flex-col justify-start items-center gap-16">

@@ -2,7 +2,6 @@ import React from 'react'
 
 
 const HeaderMenu = ({navLinks}) => {
-    
   return (
       <ul className="flex-1 flex justify-end items-center gap-16 max-lg:hidden">
         {navLinks.map((item) => (

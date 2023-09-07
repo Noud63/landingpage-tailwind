@@ -27,12 +27,15 @@ export default {
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
+        "thumbShadow": "0px 4px 10px rgb(0, 0, 0, .5)"
       },
       backgroundImage: {
         hero: "url('assets/images/collection-background.png')",
         card: "url('assets/images/thumbnail-background.png')",
       },
       screens: {
+        xsm: "500px",
+        thumbs:"760px",
         wide: "1440px",
         xxxl: '1380px',
         xxl: "1300px",
