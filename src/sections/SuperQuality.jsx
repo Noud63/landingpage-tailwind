@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
-import { shoe8 } from "../assets/images";
+import { shoe12 } from "../assets/images";
 
 const SuperQuality = () => {
   return (
@@ -33,7 +33,7 @@ const SuperQuality = () => {
 
       <div className="flex-1 flex justify-center items-center">
           <img
-            src={shoe8}
+            src={shoe12}
             alt="shoe8"
             width={570}
             height={522}

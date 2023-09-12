@@ -12,7 +12,7 @@ const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg, addName }) => {
 
   return (
     <div
-      className={`border-2 rounded-xl 
+      className={`border-2 rounded-xl shadow-[_0_2px_2px_rgb(0,0,0,.3)]
     ${
       bigShoeImg === imgUrl.bigShoe
         ? "border-coral-red shadow-xl"
