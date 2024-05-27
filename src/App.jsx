@@ -28,7 +28,7 @@ const App = () => {
   }, []);
 
   return (
-    <main className="relative bg-slate-600">
+    <main className="bg-slate-600 ">
       <Nav />
       <section className="px-6">
         <Hero />

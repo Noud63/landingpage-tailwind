@@ -12,10 +12,10 @@ const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg, addName }) => {
 
   return (
     <div
-      className={`border-2 rounded-xl shadow-[_0_2px_2px_rgb(0,0,0,.3)]
+      className={`rounded-xl shadow-[_0_2px_2px_rgb(0,0,0,.3)]
     ${
       bigShoeImg === imgUrl.bigShoe
-        ? "border-coral-red shadow-xl"
+        ? "border-2 rounded-xl border-coral-red shadow-xl"
         : "border-transparent "
     }
     cursor-pointer max-sm:flex-1`}
@@ -23,7 +23,7 @@ const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg, addName }) => {
     >
       <div
         className="flex justify-center items-center 
-        bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4"
+        bg-gradient-to-t from-slate-800 via-slate-600 to-slate-500 sm:w-40 sm:h-40 rounded-xl max-sm:p-4"
       >
         <img
           src={imgUrl.thumbnail}
